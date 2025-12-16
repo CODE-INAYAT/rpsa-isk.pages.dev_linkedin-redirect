@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting to Project...</title>
+    
+    <!-- Meta refresh redirect (2 seconds) -->
+    <meta http-equiv="refresh" content="2; url=https://rpsa-isk.pages.dev">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://rpsa-isk.pages.dev">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="https://rpsa-isk.pages.dev">
+    <meta property="og:url" content="https://rpsa-isk.pages.dev">
+    
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            font-family: "Plus Jakarta Sans", sans-serif;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+        
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-8px); }
+        }
+        
+        @keyframes progress {
+            0% { width: 0%; }
+            100% { width: 100%; }
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            25% { transform: translateY(-5px) rotate(1deg); }
+            75% { transform: translateY(5px) rotate(-1deg); }
+        }
+        
+        @keyframes shimmer {
+            0% { background-position: -200% 0; }
+            100% { background-position: 200% 0; }
+        }
+        
+        @keyframes ripple {
+            0% { transform: scale(1); opacity: 0.4; }
+            100% { transform: scale(1.5); opacity: 0; }
+        }
+        
+        .animate-pulse-custom {
+            animation: pulse 2s ease-in-out infinite;
+        }
+        
+        .animate-bounce-custom {
+            animation: bounce 1s ease-in-out infinite;
+        }
+        
+        .animate-progress {
+            animation: progress 2s linear forwards;
+        }
+        
+        .animate-fade-in-up {
+            animation: fadeInUp 0.6s ease-out forwards;
+        }
+        
+        .animate-float {
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        .animate-shimmer {
+            background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.4) 50%, transparent 100%);
+            background-size: 200% 100%;
+            animation: shimmer 1.5s infinite;
+        }
+        
+        .delay-100 { animation-delay: 0.1s; opacity: 0; }
+        .delay-150 { animation-delay: 0.15s; opacity: 0; }
+        .delay-200 { animation-delay: 0.2s; opacity: 0; }
+        .delay-250 { animation-delay: 0.25s; opacity: 0; }
+        .delay-300 { animation-delay: 0.3s; opacity: 0; }
+        .delay-350 { animation-delay: 0.35s; opacity: 0; }
+        
+        .glass {
+            background: rgba(255, 255, 255, 0.97);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        
+        .project-gradient {
+            background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #a855f7 100%);
+        }
+        
+        .bg-pattern {
+            background-image: 
+                radial-gradient(circle at 20% 80%, rgba(99, 102, 241, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(139, 92, 246, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 40% 40%, rgba(168, 85, 247, 0.05) 0%, transparent 30%);
+        }
+        
+        .icon-ring {
+            position: relative;
+        }
+    
+        
+        .icon-ring::before {
+            content: '';
+            position: absolute;
+            inset: -4px;
+            border-radius: 1rem;
+            background: linear-gradient(135deg, #6366f1, #a855f7);
+            opacity: 0.3;
+            animation: ripple 2s ease-out infinite;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-slate-50 via-indigo-50/50 to-purple-50/50 min-h-screen flex items-center justify-center p-4 bg-pattern overflow-x-hidden">
+    
+    <!-- Floating Background Elements -->
+    <div class="absolute inset-0 overflow-hidden pointer-events-none">
+        <div class="absolute top-20 left-10 w-64 h-64 bg-indigo-200/30 rounded-full blur-3xl animate-float"></div>
+        <div class="absolute bottom-20 right-10 w-80 h-80 bg-purple-200/30 rounded-full blur-3xl animate-float" style="animation-delay: -1.5s;"></div>
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-violet-100/40 rounded-full blur-3xl"></div>
+    </div>
+    
+    <div class="relative z-10 w-full max-w-lg my-auto">
+        <!-- Main Card -->
+        <div class="glass rounded-3xl shadow-2xl shadow-indigo-500/10 overflow-hidden border border-white/50">
+            
+            <!-- Header Banner -->
+            <div class="project-gradient p-6 relative overflow-hidden">
+                <div class="absolute inset-0 animate-shimmer"></div>
+                <div class="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width=\"60\" height=\"60\" viewBox=\"0 0 60 60\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cg fill=\"none\" fill-rule=\"evenodd\"%3E%3Cg fill=\"%23ffffff\" fill-opacity=\"0.05\"%3E%3Cpath d=\"M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-50"></div>
+                <div class="relative flex items-center gap-4">
+                    <!-- Project Icon -->
+                    <div class="w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-lg animate-fade-in-up">
+                        <svg class="w-8 h-8 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                        </svg>
+                    </div>
+                    <div class="animate-fade-in-up delay-100">
+                        <p class="text-white/80 text-sm font-medium">https://rpsa-isk.pages.dev</p>
+                        <h2 class="text-white text-xl font-bold">Project Redirect</h2>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Content -->
+            <div class="p-8 text-center">
+                <!-- Icon -->
+                <div class="mb-6 animate-fade-in-up delay-150">
+                    <div class="icon-ring w-20 h-20 mx-auto bg-gradient-to-br from-indigo-500 to-purple-500 rounded-full flex items-center justify-center shadow-xl shadow-indigo-500/30 animate-bounce-custom">
+                        <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/>
+                        </svg>
+                    </div>
+                </div>
+                
+                <!-- Title -->
+                <h1 class="text-2xl md:text-3xl font-extrabold text-gray-800 mb-3 animate-fade-in-up delay-200">
+                    Almost There!
+                </h1>
+                
+                <!-- Subtitle -->
+                <p class="text-gray-500 mb-6 animate-fade-in-up delay-250">
+                    Redirecting to project...
+                </p>
+                
+                <!-- URL Display -->
+                <div class="bg-gradient-to-r from-gray-50 to-slate-50 rounded-full p-4 mb-6 border border-gray-100 animate-fade-in-up delay-300">
+                    <div class="flex items-center justify-center gap-2">
+                        <div class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center">
+                            <svg class="w-4 h-4 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                            </svg>
+                        </div>
+                        <code class="text-gray-700 font-mono text-sm md:text-base font-medium">pyqs-isk.pages.dev</code>
+                    </div>
+                </div>
+                
+                <!-- Progress Bar -->
+                <div class="mb-6 animate-fade-in-up delay-350">
+                    <div class="flex items-center justify-between mb-2">
+                        <span class="text-xs font-medium text-gray-500">Redirecting...</span>
+                        <span id="countdown" class="text-xs font-bold text-indigo-600 bg-indigo-50 px-2 py-0.5 rounded-full">2s</span>
+                    </div>
+                    <div class="w-full h-2.5 bg-gray-100 rounded-full overflow-hidden">
+                        <div class="h-full project-gradient rounded-full animate-progress"></div>
+                    </div>
+                </div>
+                
+                <!-- Manual Link -->
+                <a href="https://rpsa-isk.pages.dev" 
+                   class="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-semibold rounded-full shadow-lg shadow-indigo-500/30 hover:shadow-xl hover:shadow-indigo-500/40 hover:scale-105 transition-all duration-300 group">
+                    <span>Go Now</span>
+                    <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <!-- Footer -->
+        <p class="text-center mt-6 mb-4"><span class="footer-text text-xs text-gray-500 sm:text-center"
+                    style="font-family: 'JetBrains Mono', monospace; font-size: 13.50px; padding-top: 4px;">Made With<svg
+                        class="mx-1 inline-block" style="height: 15px; width: 15px; margin-top: -3px;"
+                        viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path
+                                d="M2 9.1371C2 14 6.01943 16.5914 8.96173 18.9109C10 19.7294 11 20.5 12 20.5C13 20.5 14 19.7294 15.0383 18.9109C17.9806 16.5914 22 14 22 9.1371C22 4.27416 16.4998 0.825464 12 5.50063C7.50016 0.825464 2 4.27416 2 9.1371Z"
+                                fill="#e24040"></path>
+                        </g>
+                    </svg>By ISK<br>
+                </span></p>
+    </div>
+    <script>
+        // Countdown timer - 2 seconds
+        let seconds = 2;
+        const countdownEl = document.getElementById('countdown');
+        
+        const countdown = setInterval(() => {
+            seconds--;
+            if (seconds > 0) {
+                countdownEl.textContent = seconds + 's';
+            } else {
+                countdownEl.textContent = 'Going...';
+                countdownEl.classList.remove('bg-indigo-50', 'text-indigo-600');
+                countdownEl.classList.add('bg-green-50', 'text-green-600');
+                clearInterval(countdown);
+                // Perform redirect
+                window.location.replace("https://rpsa-isk.pages.dev");
+            }
+        }, 1000);
+        
+        // Fallback redirect after 2.5 seconds
+        setTimeout(() => {
+            window.location.href = "https://rpsa-isk.pages.dev";
+        }, 2500);
+    </script>
+</body>
+</html>
